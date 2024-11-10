@@ -38,6 +38,6 @@ function generateAccessToken(user) {
   return jwt.sign(user, ACCESS_TOKEN_SECRET, { expiresIn: "30m" });
 }
 
-app.listen(4000, () => {
+app.listen(3000, () => {
   console.log("Listening on port 4000");
 });
